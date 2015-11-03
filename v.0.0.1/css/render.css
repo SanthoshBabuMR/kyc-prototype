@@ -1,0 +1,47 @@
+.top-spacer {
+	padding-top: 16px;
+}
+.status-tab,
+.status-tab-content {
+  border-color: #dfdfdf;
+  border-style: solid;
+  border-width: 1px;
+  color: #333333;
+}
+.status-tab {
+	border-bottom: none;	
+}
+.status-tab.tabs .tab-title {
+	float: none;
+}
+.status-tab.tabs .tab-title.active > a{
+	background: #EFEFEF;
+	width: 100%;
+	display: inline-block;
+}
+.status-tab-content {
+	border-top: none;
+	padding-left: 5px;
+	padding-right: 5px;
+} 
+.status-tab-content .label {
+	font-size: 13px;
+}
+.label-info {
+	white-space: normal;
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.home {
+	position: fixed;
+	top: 0px;
+	left: 18px;
+	color: #efefef;
+}
+.logout {
+	position: fixed;
+	top: 0px;
+	right: 18px;
+	color: #efefef;
+}
