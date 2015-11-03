@@ -1,0 +1,52 @@
+# Challenge:
+--------------------------------------
+KYC for users with validate ID and ADDRESS proof.
+
+# Assumptions:
+--------------------------------------
+Data is accurate and consistent across various proofs held by the users
+Eg: First Name, Last Name, Middle Name is consistent in all proofs
+   - Name
+   - DOB
+   - Permanent address
+   - Persent address
+
+# Constraints
+--------------------------------------
+- User must have have their ID's verified, which is restricted to AADHAAR and PAN
+- The entire process is only online.
+- The requirements are based on 3rd party i.e. government API validation
+- The system will be just 
+
+# Process empowers users by,
+--------------------------------------
+- constantly enabling the user to update his/her details and verifying it.
+- provides a link, which establishes the validity of the user's id and address. This relieves bank from focusing on KYC. Enables users hassle free process.
+
+# API's based ID Validation
+--------------------------------------
+- PAN
+https://www.tin-nsdl.com/pan-verify/pan-verification-overview.php
+- AADHAAR
+https://developer.uidai.gov.in/site/book/export/html/18
+https://developer.uidai.gov.in/site/downloads
+
+# Address Validation
+--------------------------------------
+	# has valid address proof
+	--------------------------------------
+	- address validation can be based out of aadhaar
+
+	# has no valid address proof
+	--------------------------------------
+	- address validation can be based out of TRUST of USER i.e. Owner, Co-worker etc, provided, they know the tenant in the most recent of times.
+	- Also, it can based out of GAS, DTH, Telephone, Mobile and  bills.
+		The service that gets delivered directly to the address, takes greated priority.
+		Eg: DTH, Landline phones, GAS, Mobile bills ( in decreasing order of priority )
+	- tenant needs to have his ID validated.
+	- tenant can then provide owner's/co-workers's aadhaar/pan to the system
+	- system to send verification link to owner providing tenant's details
+	- on approval by owner, tenant address proof validation can be done
+	- if not, tenant will have to use any other valid means of getting address proof verified
+
+
